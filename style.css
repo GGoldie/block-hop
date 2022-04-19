@@ -1,19 +1,21 @@
+html {background-color: black}
 *{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-family: 'Cutive Mono';
 }
 .game{
     width: 500px;
     height: 200px;
-    border: 1px solid black;
+    border: 2px solid white;
     margin: auto;
 }
 #character{
     width: 20px;
     height: 50px;
-    background-color: red;
+    background-color: violet;
     position:relative;
     top: 150px;
 }
@@ -28,7 +30,7 @@
     100%{top: 150px;}
 }
 #block{
-    background-color: blue;
+    background-color: white;
     width: 20px;
     height: 20px;
     position: relative;
@@ -45,12 +47,16 @@
 p{
     text-align: center;
     font-size: 18px;
+    color: white;
 }
 h1 {
     text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
 }
 #btn {
-    background-color: lightgreen;
     padding: 14px 28px;
     font-size: 16px;
+    font-weight: bold;
 }
