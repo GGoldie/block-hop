@@ -59,17 +59,14 @@ function main() {
         gameSong.pause();
         deathAudio.play();
         
-        function delay(time) {
-            return new Promise(resolve => setTimeout(resolve, time));
-        }
+        setTimeout(function() {
+            alert("Game Over. score: " + Math.floor(counter/100))
         
-        delay(10).then(() =>
-        alert("Game Over. score: " + Math.floor(counter/100)))
-        
-        if(sb.innerHTML < Math.floor(counter/100)) {
-            sb.innerHTML= Math.floor(counter/100);
-        }
-        counter=0;
+            if(sb.innerHTML < Math.floor(counter/100)) {
+                sb.innerHTML= Math.floor(counter/100);
+            }
+            counter=0;
+        },10);
     }
     
     function next() {
