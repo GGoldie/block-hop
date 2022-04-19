@@ -1,0 +1,38 @@
+<html lang="en" 
+onclick="if (block.classList == 'animateb') {
+    jump();
+}"
+
+onkeypress="jump()">
+
+
+<head>
+    <script>
+        function main(){};
+        function jump(){};
+        function check(){};
+    </script>
+    <link href='style.css' rel='stylesheet'/>
+    <meta charset="UTF-8">
+    <title>Jump Game</title>
+</head>
+<body>
+    
+    <p>Score: <span id="scoreSpan"></span></p>
+    <br>
+    <p>Best Score: <span id="scorebest">0</span></p>
+    <div class="game">
+        <div id="character"></div>
+        <div id="block"></div>
+    </div>
+    <br>
+    <div>
+        <p>Use spacebar or mouse click to jump</p>
+        <br>
+        <p><button id="btn" onclick="this.style.display='none';main()">
+            Start The Game
+        </button></p>
+    </div>
+    <script src='script.js'>
+    </script>
+</body>
