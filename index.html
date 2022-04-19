@@ -1,9 +1,18 @@
 <html lang="en" 
-onclick="if (block.classList == 'animateb') {
+onmousedown ="if (block.classList == 'animateb') {
     jump();
 }"
 
-onkeypress="jump()">
+onkeypress=" 
+document.body.onkeyup = function(e) {
+  if (e.key == ' ' ||
+      e.code == 'Space' ||      
+      e.keyCode == 32) {
+    jump();
+  }
+}" 
+
+ontouchstart="jump()">
 
 
 <head>
